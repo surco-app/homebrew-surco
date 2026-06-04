@@ -11,14 +11,14 @@ cask "surco" do
   homepage "https://github.com/vigosan/surco-releases"
 
   auto_updates true
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "Surco.app"
 
   zap trash: [
     "~/Library/Application Support/Surco",
+    "~/Library/Logs/Surco",
     "~/Library/Preferences/com.vigosan.surco.plist",
     "~/Library/Saved Application State/com.vigosan.surco.savedState",
-    "~/Library/Logs/Surco",
   ]
 end
