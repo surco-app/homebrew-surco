@@ -10,6 +10,11 @@ cask "surco" do
   desc "Audio track organizer for DJs"
   homepage "https://github.com/vigosan/surco-releases"
 
+  livecheck do
+    url "https://github.com/vigosan/surco-releases"
+    strategy :github_latest
+  end
+
   auto_updates true
   depends_on macos: :big_sur
 
@@ -17,6 +22,8 @@ cask "surco" do
 
   zap trash: [
     "~/Library/Application Support/Surco",
+    "~/Library/Caches/com.vigosan.surco",
+    "~/Library/Caches/com.vigosan.surco.ShipIt",
     "~/Library/Logs/Surco",
     "~/Library/Preferences/com.vigosan.surco.plist",
     "~/Library/Saved Application State/com.vigosan.surco.savedState",
