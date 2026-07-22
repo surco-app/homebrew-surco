@@ -1,9 +1,9 @@
 cask "surco" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.69.1"
-  sha256 arm:   "8aa09035ffbd2aaef657691bbb012505275ad6fbe5f60e38acd446742cf4f8a6",
-         intel: "3985bcf644b99686d28a18cd43432e4927d70aef6c02d232d924c56650c764b1"
+  version "0.70.0"
+  sha256 arm:   "6985860af75f645763caa19082aca0517c468e06b863507d2854b155e775175a",
+         intel: "5f3980ff0c5f2360d7c65a77382da41d3946e3d23713f3aed92fcd84567b66c7"
 
   url "https://github.com/surco-app/surco-releases/releases/download/v#{version}/Surco-#{version}-#{arch}.dmg"
   name "Surco"
